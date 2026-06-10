@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: 'Cormorant Garamond', Georgia, serif;
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  
+  --color-gold-50: #fcf9f2;
+  --color-gold-100: #f7eed7;
+  --color-gold-200: #eddba9;
+  --color-gold-300: #e0c273;
+  --color-gold-400: #d4af37;
+  --color-gold-500: #bfa130;
+  --color-gold-600: #9e8223;
+  --color-gold-700: #7c6418;
+  --color-gold-800: #5c4811;
+  --color-gold-900: #3c2e0a;
+  
+  --color-dark-bg: #0B0B0C;
+  --color-dark-card: #141416;
+  --color-dark-border: rgba(223, 211, 195, 0.1);
+}
+
+/* Custom premium scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0B0B0C;
+}
+::-webkit-scrollbar-thumb {
+  background: #27272a;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #d4af37;
+}
+
+/* Base resets & styles */
+body {
+  background-color: #0B0B0C;
+  color: #f4f4f5;
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
+}
+
+/* Luxury Glassmorphism card utilities */
+.glass-card {
+  background: rgba(20, 20, 22, 0.7);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(212, 175, 55, 0.12);
+  box-shadow: 0 10px 40px -10px rgba(0, 0, 0, 0.5);
+}
+
+.glass-card-accent {
+  background: rgba(20, 20, 22, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(212, 175, 55, 0.25);
+  box-shadow: 0 15px 50px -12px rgba(212, 175, 55, 0.1);
+}
+
+/* Custom inputs for luxury wedding theme */
+.wedding-input {
+  background: rgba(10, 10, 11, 0.8);
+  border: 1px solid rgba(212, 175, 55, 0.2);
+  color: #f4f4f5;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.wedding-input:focus {
+  outline: none;
+  border-color: #d4af37;
+  box-shadow: 0 0 0 2px rgba(212, 175, 55, 0.2);
+  background: rgba(15, 15, 17, 0.95);
+}
+
+/* Premium micro-animations */
+@keyframes pulseGlow {
+  0%, 100% {
+    box-shadow: 0 0 15px rgba(212, 175, 55, 0.1);
+  }
+  50% {
+    box-shadow: 0 0 25px rgba(212, 175, 55, 0.25);
+  }
+}
+
+.animate-glow {
+  animation: pulseGlow 3s infinite;
+}
+
+/* Ivory Light theme styles */
+.ivory-card {
+  background: #FCF9F2; /* warm ivory/cream background */
+  border: 1px solid rgba(191, 161, 48, 0.3); /* gold accent border */
+  box-shadow: 0 10px 40px -10px rgba(92, 72, 17, 0.15);
+  color: #1C1917; /* dark charcoal text */
+}
+
+.ivory-card-accent {
+  background: #F5EED7; /* slightly darker cream */
+  border: 1px solid rgba(191, 161, 48, 0.4);
+  box-shadow: 0 15px 50px -12px rgba(191, 161, 48, 0.15);
+  color: #1C1917;
+}
+
+/* Printing styles for PDF export matching branding */
+.pdf-print-container {
+  font-family: 'Inter', sans-serif;
+  color: #1c1917;
+  background: #ffffff;
+  padding: 40px;
+}

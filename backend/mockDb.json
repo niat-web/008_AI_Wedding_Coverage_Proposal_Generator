@@ -1,0 +1,24 @@
+{
+  "proposals": [
+    {
+      "coupleNames": "Sarah & Michael",
+      "weddingDate": "2026-09-15",
+      "venue": "Taj Mahal Palace",
+      "city": "Mumbai",
+      "events": [
+        "Wedding Ceremony",
+        "Reception"
+      ],
+      "packageType": "Premium",
+      "specialRequests": "Drone coverage",
+      "proposal": {
+        "introduction": "...",
+        "coveragePlan": "...",
+        "whatToExpect": "...",
+        "preWeddingConcept": "..."
+      },
+      "createdAt": "2026-06-08T07:41:20.850Z",
+      "id": "prop_1780904480856"
+    }
+  ]
+}

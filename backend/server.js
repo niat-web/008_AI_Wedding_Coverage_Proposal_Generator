@@ -28,6 +28,6 @@ app.use('/api', analyticsRoutes);
 
 initializeDatabase();
 
-app.listen(PORT, '127.0.0.1', () => {
-  console.log(`Server is running on http://127.0.0.1:${PORT}`);
+app.listen(PORT, '0.0.0.0', () => {
+  console.log(`Server is running on port ${PORT}`);
 });

@@ -6,7 +6,8 @@ import HistoryView from './components/HistoryView';
 import DashboardView from './components/DashboardView';
 import Spinner from './components/Spinner';
 
-const API_BASE_URL = 'http://127.0.0.1:5002/api';
+const API_BASE_URL =
+  import.meta.env.VITE_API_BASE_URL || 'http://127.0.0.1:5002/api';
 
 export default function App() {
   const [activeView, setActiveView] = useState('generator');
